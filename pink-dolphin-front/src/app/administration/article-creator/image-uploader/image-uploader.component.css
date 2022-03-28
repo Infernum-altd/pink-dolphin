@@ -1,0 +1,14 @@
+.container {
+  background-color: red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center
+}
+
+.file-input {
+  display: none;
+}
+
+.self-alight-center {
+  align-self: center;
+}

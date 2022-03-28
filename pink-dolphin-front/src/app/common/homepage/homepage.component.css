@@ -1,0 +1,10 @@
+.main-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.dolphin-container {
+  position: fixed;
+  width: 20%;
+  height: min-content;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="list-container">
+    <app-article-preview *ngFor="let article of articles" [article]="article"
+                         style="cursor: pointer"
+                         routerLink="/article/{{article.id}}"></app-article-preview>
+  </div>
+</div>
+<mat-paginator [length]="100"
+               [pageSize]="4">
+</mat-paginator>
+
+
+

@@ -1,0 +1,13 @@
+.container {
+  height: 600px;
+  overflow: hidden;
+}
+
+.list-container {
+  overflow-y: scroll;
+  height: 100%;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

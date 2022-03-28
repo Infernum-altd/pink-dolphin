@@ -1,0 +1,24 @@
+<div class="container">
+
+  <div mat-dialog-content>
+    <p>Select category</p>
+  </div>
+
+  <mat-form-field appearance="fill">
+    <mat-label>Category</mat-label>
+    <mat-select [(ngModel)]="selectedValue" name="categoty">
+      <mat-option *ngFor="let category of categories" [value]="category">
+        {{category.name}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <app-image-uploader (uploadedPreviewImage)="addPreviewImageToArticle($event)"></app-image-uploader>
+
+  <div mat-dialog-actions>
+    <button mat-button id="close-button" (click)="onNoClick()">Close</button>
+    <button mat-button [mat-dialog-close]="{selectedCategory:selectedValue, previewImage:selectedPreviewImage}" *ngIf="selectedValue">Publish</button>
+  </div>
+
+</div>
+

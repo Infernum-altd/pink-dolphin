@@ -1,0 +1,8 @@
+<img src="assets/images/pink-dolphin.png" alt="" class="dolphin-container"/>
+<div class="main-body">
+
+  <div class="center">
+    <app-category-switch (categorySwitch)="changeCurrentCategory($event)"></app-category-switch>
+    <app-article-list [categoryId]="currentCategoryId"></app-article-list>
+  </div>
+</div>

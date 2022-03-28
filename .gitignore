@@ -75,4 +75,4 @@ testem.log
 .DS_Store
 Thumbs.db
 
-/pink.dolphin-front/node_modules
+**/pink-dolphin-front/node_modules/

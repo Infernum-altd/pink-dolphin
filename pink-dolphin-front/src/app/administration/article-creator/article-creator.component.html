@@ -1,0 +1,22 @@
+<div class="center">
+  <div class="container">
+
+    <form class="container form">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Article title</mat-label>
+        <input matInput placeholder="Pizdataya statya" [(ngModel)]="article.title" name="title">
+      </mat-form-field>
+
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label>Introduction</mat-label>
+        <textarea matInput placeholder="Ryski voennui korabl idi naxyi" [(ngModel)]="article.introduction" name="introduction"></textarea>
+      </mat-form-field>
+    </form>
+
+    <app-rich-text-editor (articleContent)="updateArticleContent($event)"></app-rich-text-editor>
+
+    <button mat-fab color="primary" (click)="openDialog()">
+      Publish
+    </button>
+  </div>
+</div>
